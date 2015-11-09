@@ -19,6 +19,7 @@ class ViewController: UIViewController ,modelControllerDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {

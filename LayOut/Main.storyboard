@@ -34,8 +34,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C69-b6-P80">
-                                <rect key="frame" x="0.0" y="177" width="600" height="44"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C69-b6-P80">
+                                <rect key="frame" x="0.0" y="221" width="600" height="44"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3AR-RF-0f5">
                                         <rect key="frame" x="20" y="0.0" width="173" height="44"/>
@@ -102,9 +102,7 @@
                             <constraint firstAttribute="trailing" secondItem="C69-b6-P80" secondAttribute="trailing" id="wfn-4C-6bm"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Pu6-zr-luk">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="8GR-YP-K2G"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="Pu6-zr-luk"/>
                     <connections>
                         <outlet property="centerX" destination="f9E-Gc-gKZ" id="8L5-it-rBK"/>
                         <outlet property="firstButton" destination="3AR-RF-0f5" id="JLD-so-v1b"/>
