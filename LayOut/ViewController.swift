@@ -8,7 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+
+
+class ViewController: UIViewController ,modelControllerDelegate{
+    
 
     @IBOutlet weak var firstButton: UIButton!
     
@@ -16,6 +19,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    }
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        let vc = HWModelController()
+        vc.delegate = self
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func changeColor(color: UIColor) {
+        self.view.backgroundColor = UIColor.blueColor()
     }
 
     @IBAction func buttonClick(sender: UIButton) {
